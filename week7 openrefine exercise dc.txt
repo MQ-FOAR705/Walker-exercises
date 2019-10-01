@@ -1,0 +1,166 @@
+[
+  {
+    "op": "core/column-move",
+    "columnName": "village",
+    "index": 61,
+    "description": "Move column village to position 61"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "village",
+    "index": 0,
+    "description": "Move column village to position 0"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "village",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "49"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chirodzo"
+      }
+    ],
+    "description": "Mass edit cells in column village"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "village",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Chirdozo"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chirodzo"
+      }
+    ],
+    "description": "Mass edit cells in column village"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "village",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ruca"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ruaca"
+      }
+    ],
+    "description": "Mass edit cells in column village"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "village",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ruaca - Nhamuenda"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ruaca"
+      }
+    ],
+    "description": "Mass edit cells in column village"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "village",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ruaca-Nhamuenda"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ruaca"
+      }
+    ],
+    "description": "Mass edit cells in column village"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "years_farm",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column years_farm using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "buildings_in_compound",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column buildings_in_compound using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "buildings_in_compound",
+          "expression": "value",
+          "columnName": "buildings_in_compound",
+          "from": 1,
+          "to": 8.02,
+          "selectNumeric": false,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "buildings_in_compound",
+    "expression": "grel:value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column buildings_in_compound using expression grel:value"
+  }
+]
